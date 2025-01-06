@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".scan-package").appendChild(scanningMessage);
 
         // Show scanning image
-        unscanImage.src = "/images/Scanning image.png";
+        unscanImage.src = "./images/Scanning image.png";
         unscanImage.style.width = "300px";
         unscanImage.style.height = "200px";
         unscanImage.style.position = "relative"
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Simulate scanning process
         setTimeout(() => {
             // Show scanned image and success message
-            unscanImage.src = "/images/Scanned image.png";
+            unscanImage.src = "./images/Scanned image.png";
             scanningMessage.textContent = "Package Successfully Scanned";
 
             setTimeout(() => {
@@ -77,9 +77,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Click event for Remove button
     removeCodeBtn.addEventListener("click", () => {
         // Reset to initial state
-        unscanImage.src = "/images/unscanned barcode.png";
+        unscanImage.src = "./images/unscanned barcode.png";
         unscanImage.style.display = "block";
         scanBtn.style.display = "block";
+        unscanImage.style.position = "relative";
+        unscanImage.style.left = "-20px"
         scanResult.style.display = "none";
         manualEntrySection.style.display = "block";
         packageCode.textContent = "";

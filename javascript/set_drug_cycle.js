@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
       setDrugRadio.classList.add("hidden");
-      setDrugRadioImg.src = "/images/check button.png";
+      setDrugRadioImg.src = "./images/check button.png";
       setDrugRadioImg.style.display = "inline";
   
       setDrugButton.style.color = "rgba(1, 168, 90, 1)";

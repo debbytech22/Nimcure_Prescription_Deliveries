@@ -28,14 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
         scanningMessage.style.top = "30px"
         document.querySelector(".scan-package").appendChild(scanningMessage);
 
-        unscanImage.src = "/images/Scanning image.png";
+        unscanImage.src = "./images/Scanning image.png";
         unscanImage.style.width = "300px";
         unscanImage.style.height = "200px";
         unscanImage.style.position = "relative"
         unscanImage.style.left = "170px"
 
         setTimeout(() => {
-            unscanImage.src = "/images/Scanned image.png";
+            unscanImage.src = "./images/Scanned image.png";
             scanningMessage.textContent = "Package Successfully Scanned";
 
             setTimeout(() => {
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   
     removeCodeBtn.addEventListener("click", () => {
-        unscanImage.src = "/images/unscanned barcode.png";
+        unscanImage.src = "./images/unscanned barcode.png";
         unscanImage.style.display = "block";
         unscanImage.style.position = "relative"
         unscanImage.style.left = "-20px"

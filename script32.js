@@ -1,6 +1,6 @@
 assignBtn = document.getElementById("assign-package");
 assignBtn.addEventListener("click", function(){
-    window.location.href = "modular_html.html"; 
+    window.location.href = "indexpage4.html"; 
 
 }
 

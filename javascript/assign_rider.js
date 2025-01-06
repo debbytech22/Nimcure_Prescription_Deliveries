@@ -157,7 +157,7 @@ function updateSetRiderRadio() {
 
 
   assign_rider_radio.classList.add("hidden");
-  setDrugRadioImg.src = "/images/check button.png";
+  setDrugRadioImg.src = "./images/check button.png";
   setDrugRadioImg.style.display = "inline";
 
   assign_rider_btn.style.color = "rgba(1, 168, 90, 1)";

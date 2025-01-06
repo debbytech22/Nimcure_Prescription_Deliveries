@@ -111,7 +111,7 @@ color: rgba(39, 109, 247, 1);
     position: absolute;
     width: 83%;
     height: 80%;
-    border: 2px solid;
+    /* border: 2px solid; */
     background-color: rgba(68, 176, 126, 1);
     color: white;
     left: 150px;
@@ -130,7 +130,7 @@ color: rgba(39, 109, 247, 1);
     height: 20px;
     position: relative;
     top: 18px;
-    left: 940px;
+    left: 1100px;
 }
 
 #alert p{
