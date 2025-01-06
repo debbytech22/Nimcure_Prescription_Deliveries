@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Page33</title>
+</head>
+<body>
+    <div>
+        <div class="row1">
+            <span><img class="upper-image" src="/images/Vector-page2.png" alt="image"> </span> 
+            <ul class="top">
+                <li>
+                    <img class="nav" src="/images/overview.png" alt="image">Overview
+                </li>
+                <li>
+                   <img class="nav" src="/images/delivery.png" alt="image">Delivery
+                </li>
+                <li>
+                    <span id="highlight"> <img  class="nav" src="/images/patients.png" alt="image"> Patients </span>
+                </li>
+                <li>
+                    <img class="nav" src="/images/dispatch riderr.png" alt="image">Dispatch Rider 
+                </li>
+                <li>
+                   <img class="nav" src="/images/admin.png" alt="image">Admin                   
+                </li>
+            </ul>                 
+            <div class="dropdown-content" id="sp">       
+                <div class="spa">
+                    <img class="human-image" src="/images/human image.png" alt="image">
+                    <p>Emmanuel Adikwe <img class="dropdown-image" src="/images/dropdown.png" alt="image"></p>
+                </div>    
+            </div>
+        </div>
+        <div id="not-row1">
+            <div class="row2-page3">
+                <p id="pat">patients <span id="view">/view patients</span></p>
+                <div class="row2-right">
+                    <div id="nextDeliverySection">
+                        <p>Patient's next delivery date is </p>     
+                        <p><span class="date" id="nextDeliveryDate"></span><span  class="date" id="daysLeft"></span></p>
+                    </div>               
+                    <!-- <p id="assign-package" >Assign Package to Patient</p> -->
+                     <button id="assign-package" >Assign Package to Patient</button>
+                </div>
+            </div>
+            <div class="body-row3">
+                <div class="body-left">
+                    <p id="p1">Patients</p>
+                    <p id="p2"> Rider's Profile</p>
+                    <p id="p3">Delivery History</p>
+                </div>
+                <div class="body-right">
+                    <div class="body-right-top">
+                        <div id="body-right-top-left">
+                            <p id="payment-status">Payment Status</p>
+                            <p id="paid">Paid</p>
+                        </div>
+                       <div id="body-right-top-right">
+                             <button id="patient"> Patient Information </button>
+                             <button id="delivery"> Delivery Information </button>
+                       </div>
+                    </div>
+                    <div id="body-right-mid-left">
+                        <div class="body-right-mid-left">
+                            <p id="patient-info1">Patient's Information</p>
+                            <p id="patient-info2">Personal Information about Patients</p>
+                            <button id="editButton">
+                                <img class="pen-image" src="/images/pen.png" alt="image">Edit Patient's Information
+                            </button>
+                        </div>
+                       <div>
+                            <div id="patientInfoSection" class="section">
+                                <form id="patientForm">
+                                    <input type="text" id="hospitalid" class="inputForm" disabled>
+                                    <p id="hosId">Hospital ID</p>
+                        
+                                    <input type="text" id="firstname" class="inputForm" disabled >
+                                    <p id="Fname">First Name</p>
+                        
+                                    <input type="text" id="lastname" class="inputForm" disabled >
+                                    <p id="lname">Last Name</p>
+                        
+                                    <input type="text" id="gender" class="inputForm" disabled >
+                                    <p id="genderr">Gender</p>
+                        
+                                    <input type="text" id="phoneNumber" class="inputForm" disabled >
+                                    <p id="phone">Phone Number</p>
+                        
+                                    <input type="text" id="email" class="inputForm" disabled >   
+                                    <p id="Email">Email Address</p>
+                                </form>   
+                            </div> 
+                            <div id="deliveryInfoSection" class="section">
+                                <!-- <h1>Patient Information</h1> -->
+                                <form id="deliveryForm">
+                                    <input type="text" id="nextDelivery" >
+                                    <p id="PnextDelivery">Next Delivery Date</p>
+                            
+                                    <!-- <label for="firstname">First Name</label> -->
+                                    <input type="text" id="DeliveryArea" >
+                                    <p id="PdeliveryArea">Delivery Area</p>
+                                
+                                    <!-- <label for="lastname">Last Name</label> -->
+                                    <input type="text" id="DeliveryAddress" >
+                                    <p id="PdeliveryAddress">Delivery Address</p>
+                            
+                                    <!-- <label for="gender">Gender</label> -->
+                                    <input type="text" id="status" >
+                                    <p id="Pstatus">Payment Status</p>
+                                </form>   
+                            </div>
+                       </div>
+                    </div>
+                    <div class="last-button">
+                        <button id="saveButton" disabled>Save Changes</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script32.js"></script>  
+</body>
+
+</html>
+
+
+
+

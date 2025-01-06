@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>page4</title>
+</head>
+<body>
+    <div id="background-content">
+        <div class="row1">
+            <span><img class="upper-image" src="/images/Vector-page2.png" alt="image"> </span> 
+            <ul class="top">
+                <li>
+                    <img class="nav" src="/images/overview.png" alt="image">Overview
+                </li>
+                <li>
+                   <img class="nav" src="/images/delivery.png" alt="image">Delivery
+                </li>
+                <li>
+                    <span id="highlight"> <img  class="nav" src="/images/patients.png" alt="image"> Patients </span>
+                </li>
+                <li>
+                    <img class="nav" src="/images/dispatch riderr.png" alt="image">Dispatch Rider 
+                </li>
+                <li>
+                   <img class="nav" src="/images/admin.png" alt="image">Admin                   
+                </li>
+            </ul>                 
+            <div class="dropdown-content" id="sp">       
+                <div class="spa">
+                    <img class="human-image" src="/images/human image.png" alt="image">
+                    <p>Emmanuel Adikwe <img class="dropdown-image" src="/images/dropdown.png" alt="image"></p>
+                </div>    
+            </div>
+        </div>
+        <div class="row2">
+            <p id="patient">Patients/View Patient<span id="patient2">/Assign Package to Patients</span></p>
+        </div>
+        <div id="body">
+            <div id="body-left">
+                <div id="p1">
+                    <p >Patient Information</p>
+                </div>
+                <div id="patient-display-info">
+                    <div id="p-style1">
+                        <p>Hospital ID</p>
+                        <p>Name</p>
+                        <p>Phone Number</p>
+                        <p>Next Delivery Date</p>
+                        <p>Location</p>
+                    </div>
+                    <div id="p-style2">
+                        <p id="p-id"></p>
+                        <p class="p-name"></p>
+                        <p id="p-phone"></p>
+                        <p id="p-next-delivery"></p>
+                        <p id="p-location"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="body-right">
+                <div id="form">
+                    <form action="">
+                        <div class ="tttt" class="radio" id="underline1" >
+                            <input id = "set-drug-radio" type="radio"  checked>
+                            <img id="set-drug-radio-img" src="/images/check button.png" alt="image">
+                            <button class="p-mov" id="p-mov1">Set Drug Cycle/Length</button>
+                        </div>
+                        <div class ="tttt"  class="radio" id="underline2">
+                            <input id = "assign-rider-radio" type="radio"   >
+                            <img id="assign-rider-img" src="/images/check button.png" alt="image">
+                            <button id="assign-rider-btn" class="p-mov">Assign Dispatch Rider</button>
+                        </div >
+                        <div class ="tttt"  class="radio" id="underline3">
+                            <input id = "scan-package-radio" type="radio"  >
+                            <button type="button" id="scan-package-btn"  class="p-mov">Scan Package</button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <div id="check">
+                        <div id="set-drug-cycle" class="section">
+                            <div id="p2">
+                                <p> <span class="p-name"> </span> has a drug cycle of two months</p>
+                            </div>
+                            <form action="" id="form2">
+                                <div id="drug-deliver">
+                                    <div id="first-radio" class="radio2">
+                                        <input type="radio" id="initial-drug-cyc-radio" name="check">
+                                        <p id="p-drug-cycle">Same as initial drug cycle</p>
+                                    </div>
+                                    <div id="p4">
+                                        <p >Deliver drug on <span id="p2-next-delivery"></span> & set next delivery date to <span id="p3-next-delivery"></span></p>
+                                    </div>    
+                                </div>
+                                <div id="border">
+                                    <div id="input3" class="radio2">
+                                        <input type="radio" id="set-new-drug" name="check">
+                                        <p>Set new drug cycle</p>
+                                    </div>     
+                                    <p id="p3"></p> 
+                                </div>  
+                            </form>
+                        </div>
+                        <div class="hidden" id="assign-rider" class="section" >
+                            <div class="upper-part">
+                                <p class="upper-p">All <span id="upper-p1">(33)</span></p>
+                                <p class="upper-p">Yaba Riders <span id="upper-p2">(5)</span></p>
+                                <p class="upper-p">Unassigned Riders <span id="upper-p3">(10)</span></p>
+                                <p class="upper-p">Assigned Riders <span id="upper-p4">(23)</span></p>
+                            </div>  
+                            <div class="scroll-container" id="scrollContainer">
+                                Rows will be inserted dynamically here
+                            </div>
+                        </div>
+                        <div id="scan-package" class = "section">
+                            <div >
+                                <div>
+                                    <p id="scan-p1">Scan a package to assign to <span id="patient-name">name</span></p>
+                                </div>
+                                <div class="general-barcode">
+                                    <div class="scan-package">
+                                        <img id="unscan-image"  src="/images/unscanned barcode.png" alt="barcode">
+                                        <!--  -->
+                                        <!-- <img id="unscan-image"  src="/images/Scanned image.png" alt="scanned"> -->
+                                        <button id="scan-btn"> Scan Package</button>
+                                        <div id= "scanResult" >
+                                            <p id="package-code">Package code</p>
+                                            <p > <span id="packageCode"></span></p>
+                                            <div id="removeCode">
+                                                <img id="unscan-image"  src="/images/cancel image.png" alt="scanning">
+                                                <p id="p-remove">Remove</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="border-div">
+                                        <div class="enter-code">
+                                            <p id="scan-p2" >OR</p>
+                                            <p>Trouble scanning QR code?</p>
+                                            <p>Enter manually</p>
+                                            <div id="barcode-input-sbt">
+                                                <input id="barcode-input" type="text" placeholder="Enter Code">
+                                                <button id="submit-entered-barcode">Submit Code</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="barcode-bottom">
+                                    <button id="barcode-bottom-btn1">Back</button>
+                                    <button id="barcode-bottom-btn2">Assign Package</button>
+                                </div>
+                            </div>
+                            <div id = "modal-overlay" class="hidden">
+                                <div class="div1" >
+                                    <p id="upper-overlay">Assign Package <span id="package-code" class= "packagee-code">code</span> </p>
+                                </div>
+                                <div class="div1">
+                                    <p id="middle-overlay">Are you sure you want to assign package <span  id="package-code-confirmation"  class= "packagee-code">PKG123456</span> to <span id="patient-name">name</span>?</p>
+                                </div>
+                                <div id="btn-overlay">
+                                    <button id = "go-back-btn" >No,Go back</button>
+                                    <button id = "assign-package-btn" >Yes, Assign Package</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="line">
+                            <button id="next-button" >Next</button>
+                        </div>
+                    </div>    
+                </div>   
+            </div>
+        </div>
+    </div>
+    <script src="javascript/set_drug_cycle.js"></script>
+    <script src="javascript/assign_rider.js"></script>
+    <script src="javascript/scan_package.js"></script>
+    <script src="javascript/navigation.js"></script>
+
+</body>
+</html>

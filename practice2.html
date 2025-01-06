@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio Button Test</title>
+  <style>
+    .selected-row {
+      border: 2px solid green;
+    }
+  </style>
+</head>
+<body>
+  <div class="radio-container">
+    <div class="new-row">
+      <input type="radio" name="action" class="radio-btn" id="radio1">
+      <label for="radio1">Option 1</label>
+    </div>
+    <div class="new-row">
+      <input type="radio" name="action" class="radio-btn" id="radio2">
+      <label for="radio2">Option 2</label>
+    </div>
+    <div class="new-row">
+      <input type="radio" name="action" class="radio-btn" id="radio3">
+      <label for="radio3">Option 3</label>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to attach event listeners
+    document.addEventListener("DOMContentLoaded", () => {
+      const radioButtons = document.querySelectorAll(".radio-btn");
+      const rows = document.querySelectorAll(".new-row");
+
+      radioButtons.forEach((radio, index) => {
+        radio.addEventListener("change", () => {
+          console.log(`Radio button ${index + 1} selected`);
+
+          // Clear styles for all rows
+          rows.forEach(row => row.classList.remove("selected-row"));
+
+          // Style only the row containing the selected radio button
+          if (radio.checked) {
+            radio.closest(".new-row").classList.add("selected-row");
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy-Light", sans-serif;
+    }
+
+    @font-face{
+        font-family: "Gilroy-Light";
+        src: url("font/Gilroy-Light.ttf") format("truetype"); 
+        font-weight: normal;
+        font-style: normal;
+       
+    }
+
+    body{
+        background-color: #F5F5F5;
+
+    }
+
+    .row1{
+        display: flex;   
+        flex-direction:row;
+        justify-content:space-around;
+border-bottom: 0.5px solid rgba(207, 207, 207, 1);        
+background-color: white;
+        padding-top: 10px;
+        height: 80px;
+        
+    }
+
+    .upper-image{
+        margin-top: 10px;
+        /* border: 2px solid; */
+        width: 43px;
+        height: 43px;
+        margin-left:60px;
+        margin-right:60px;
+
+    
+    }
+    
+    .nav{
+        margin-right: 7px;
+
+    }
+    
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content:space-between;
+        gap: 50px;
+        padding-right: 10px;
+        /* border: 2px solid; */
+        padding-top: 9px;
+        color: #827F98;
+
+    
+    
+    }
+
+
+    #highlight{
+        border-bottom: 4px solid rgba(39, 109, 247, 1);
+        color: rgba(39, 109, 247, 1);
+            /* border: 2px solid; */
+            padding-bottom: 38px;
+            padding-top: 5px;
+        
+        
+        }
+
+    .spa{
+        display: flex;
+        gap: 5px;   
+        /* border: 2px solid; */
+        margin-right: 50px;
+        width: 190px;
+        margin-top: 20px;
+
+    
+    }
+    
+    .spa p{
+        padding-top: 5px;
+
+    }
+    
+    .human-image{
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .row2-page3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* border: 2px solid; */
+        padding-top: 20px;
+        margin-top: 20px;
+        margin-bottom: -35px;
+        border-bottom: 0.5px rgba(207, 207, 207, 1);
+    }
+
+    .row2-right{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin-left: 80px;
+
+    }
+
+    #assign-package{
+        border: 2px solid blue;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        background-color: rgba(31, 90, 244, 1);
+        color: rgba(255, 255, 255, 1);
+        margin-right: 20px;
+    }
+
+    #pat{
+        margin-right: 420px;
+        color: rgba(39, 109, 247, 1);
+        font-weight: 400;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .body-row3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* border: 2px solid; */
+        margin-top: 50px;
+        margin-left: 120px;
+        margin-right: 150px;
+
+    }
+
+    .body-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 200px;
+        height: 150px;
+        /* border: 2px solid; */
+        margin-left: 20px;
+        background-color: white;
+
+    }
+    .body-left #p2{
+        /* border: 2px solid; */
+        height: 50px;
+        width: 200px;
+        padding-left: 40px;
+        padding-top: 15px;
+    }
+
+    .body-left #p1{
+    /* border: 2px solid; */
+    width: 200px;
+    height: 50px;
+    padding-left: 40px;
+    padding-top: 15px;
+
+    }
+
+    .body-left #p3{
+        /* border: 2px solid; */
+        width: 200px;
+        height: 50px;
+        padding-left: 40px;
+        padding-top: 15px;
+    }
+
+.body-right{
+    background-color: white;
+    /* border: 2px solid; */
+    /* position: relative; */
+    width: 1200px;
+
+}
+
+.body-right-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom:20px ;
+    border-bottom: 1px solid rgba(239, 239, 239, 1);        
+    position: relative;
+    height: 90px;
+
+}
+
+#body-right-top-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 2px solid; */
+    gap: 30px;
+    margin-right: 770px;
+    margin-bottom: 80px;
+    position: absolute;
+
+}  
+
+#body-right-top-right{
+    display: flex;
+    gap: 80px;
+    /* border: 2px solid; */
+    margin-top: 20px;
+    margin-left: 400px;
+       
+}
+
+
+#body-right-mid-left{
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+   
+    position: relative;
+}
+
+.body-right-mid-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 80px;
+    /* border: 2px solid; */
+    margin-top: 50px;
+}
+
+#p2{
+    /* border: 2px solid blue; */
+    color: #276DF7;
+    background-color: rgba(39, 109, 247, 0.1);
+    font-weight: 700;
+    font-size: 14px;
+    border-right: 3px solid rgba(39, 109, 247, 1);
+}
+
+.pen-image{
+    width: 15px; 
+    margin-right: 10px;
+}
+
+#editButton{
+    width: 238px;
+    height: 48px;
+    margin-top: 10px;
+    border: 2px solid rgba(31, 90, 244, 1);
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(31, 90, 244, 1);
+}
+
+#patient-info2{
+font-weight: 400;
+/* border: 2px solid; */
+font-size: 14px;
+opacity: 70%;
+margin-top: -10px;
+
+
+}
+
+#paid{
+    width: 80px;
+    height: 36px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #01A85A33;
+    color: #01A85A;
+    margin-top: 15px;
+}
+
+#payment-status{
+    /* border:2px solid ; */
+    margin-left: 20px;
+    margin-top: 24px;
+}
+
+form{
+    /* border: 2px solid; */
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    height: 250px;
+    width: 450px;
+    margin-top: 50px;
+    margin-right: 80px;
+    /* margin-right: 120px; */
+    
+
+}
+
+
+
+#hospitalid{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgba(239, 239, 239, 1);
+    border: 1px solid rgba(128, 128, 128, 1);
+
+}
+
+
+#email{
+    grid-column-start: 1;
+    grid-column-end: 3;
+     background-color: rgba(239, 239, 239, 1);
+     border: 1px solid rgba(128, 128, 128, 1);
+
+
+}
+
+#phoneNumber{
+    background-color: rgba(239, 239, 239, 1);
+    border: 1px solid rgba(128, 128, 128, 1);
+}
+
+#firstname{
+    background-color: rgba(239, 239, 239, 1);
+    border: 1px solid rgba(128, 128, 128, 1);
+}
+
+#lastname{
+    background-color: rgba(239, 239, 239, 1);
+    border: 1px solid rgba(128, 128, 128, 1);
+}
+
+#gender{
+    background-color: rgba(239, 239, 239, 1);
+    border: 1px solid rgba(128, 128, 128, 1);
+}
+
+
+
+
+
+
+#saveButton{
+    border: 2px solid;
+    width: 200px;
+    height: 60px;
+    margin-top: 50px;
+    color: rgba(255, 255, 255, 1);
+    background-color: #1f5bf476;
+
+    
+
+}
+
+.last-button{
+    border-top: 1px solid rgba(239, 239, 239, 0.452);
+    margin-top: 50px;
+    padding-left: 880px;
+    padding-bottom: 55px ;
+    
+
+
+}
+
+
+#patientInfoSection{
+    position: relative;
+}
+
+
+#hospitalid{
+    position: relative;
+}
+
+#hosId{
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 8px;
+    color: rgba(103, 103, 103, 1);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+
+#Fname{
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 8px;
+    color: rgba(103, 103, 103, 1);
+    font-weight: 400;
+    font-size: 14px;
+    }
+
+#lname{
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 240px;
+    color: rgba(103, 103, 103, 1);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#genderr{
+
+    position: absolute;
+    margin-top: 135px;
+    margin-left: 8px;
+    color: rgba(103, 103, 103, 1);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#phone{
+    position: absolute;
+    margin-top: 135px;
+    margin-left: 240px;
+    color: rgba(103, 103, 103, 1);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#Email{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 8px;
+    color: rgba(103, 103, 103, 1);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+ #patient-info3 {
+    color: rgba(39, 109, 247, 1);
+    font-weight: 700;
+    font-size: 16px;
+    border-bottom: 4px solid rgba(39, 109, 247, 1);
+    border: 2px solid blue;
+
+  
+}
+
+#body-right-top-right {
+    height: 90px;
+    margin-top: -18px;
+    padding-top: 40px;
+}
+
+#patient{
+    border: none;
+    padding-bottom: 20px;
+    background-color: white;
+    margin-bottom: 2px;
+
+    
+}
+
+#delivery{
+    padding-bottom: 20px;   
+    border: none;
+    background-color: white;
+    margin-bottom: 2px;
+
+
+}
+
+.inputForm{
+    padding-top: 22px;
+    
+    padding-left: 7px;
+}
+
+.date{
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+#view{
+color: rgba(42, 42, 42, 1);
+font-weight: 400;
+font-size: 24px;
+}
+
+
+
+.section {
+    display: none; 
+  }
+  .section.active {
+    display: block; 
+  }
+
+  #deliveryInfoSection{
+    position: relative;
+} 
+
+
+
+
+#PnextDelivery{
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 8px;
+    color: rgba(103, 103, 103, 1);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+
+#PdeliveryArea{
+position: absolute;
+margin-top: 75px;
+margin-left: 8px;
+color: rgba(103, 103, 103, 1);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#PdeliveryAddress{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 8px;
+    color: rgba(103, 103, 103, 1);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#Pstatus{
+
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 8px;
+    color: rgba(103, 103, 103, 1);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#deliveryForm{
+    /* border: 2px solid; */
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    height: 250px;
+    width: 450px;
+    margin-top: 50px;
+    margin-right: 80px;
+
+}
+
+#nextDelivery{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgba(239, 239, 239, 1);
+    border: 1px solid rgba(128, 128, 128, 1);
+    padding-top: 18px;
+    padding-left: 8px;
+}  
+
+
+
+#DeliveryArea{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgba(239, 239, 239, 1);
+    border: 1px solid rgba(128, 128, 128, 1);
+    padding-top: 18px;
+    padding-left: 8px;
+
+}
+
+#DeliveryAddress{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgba(239, 239, 239, 1);
+    border: 1px solid rgba(128, 128, 128, 1);
+    padding-top: 18px;
+    padding-left: 8px;
+}
+
+
+#status{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: rgba(239, 239, 239, 1);
+    border: 1px solid rgba(128, 128, 128, 1);
+    padding-top: 18px;
+    padding-left: 8px;
+}   

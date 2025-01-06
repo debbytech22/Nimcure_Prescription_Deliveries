@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5prac.css">
+    <title>page5</title>
+</head>
+<body>
+    <div id="background-content">
+        <div>
+            <p id="scan-p1">Scan a package to assign to <span id="patient-name">name</span></p>
+        </div>
+        <div class="general-barcode">
+            <div class="scan-package">
+                <img id="unscan-image"  src="/images/unscanned barcode.png" alt="barcode">
+                <!--  -->
+                <!-- <img id="unscan-image"  src="/images/Scanned image.png" alt="scanned"> -->
+                <button id="scan-btn"> Scan Package</button>
+                <div id= "scanResult" >
+                    <p id="package-code">Package code</p>
+                    <p > <span id="packageCode"></span></p>
+                    <div id="removeCode">
+                        <img id="unscan-image"  src="/images/cancel image.png" alt="scanning">
+                        <p id="p-remove">Remove</p>
+                    </div>
+                </div>
+            </div>
+            <div id="border-div">
+                <div class="enter-code">
+                    <p id="scan-p2" >OR</p>
+                    <p>Trouble scanning QR code?</p>
+                    <p>Enter manually</p>
+                    <div id="barcode-input-sbt">
+                        <input id="barcode-input" type="text" placeholder="Enter Code">
+                        <button id="submit-entered-barcode">Submit Code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="barcode-bottom">
+            <button id="barcode-bottom-btn1">Back</button>
+            <button id="barcode-bottom-btn2">Assign Package</button>
+        </div>
+    </div>
+    <div id = "modal-overlay" class="hidden">
+        <div class="div1" >
+            <p id="upper-overlay">Assign Package <span id="package-code" class= "packagee-code">code</span> </p>
+        </div>
+        <div class="div1">
+            <p id="middle-overlay">Are you sure you want to assign package <span  id="package-code-confirmation"  class= "packagee-code">PKG123456</span> to <span>name</span>?</p>
+        </div>
+        <div id="btn-overlay">
+            <button id = "go-back-btn" >No,Go back</button>
+            <button id = "assign-package-btn" >Yes, Assign Package</button>
+        </div>
+    </div>
+    <script src="script5.js"></script> 
+</body>
+</html>
