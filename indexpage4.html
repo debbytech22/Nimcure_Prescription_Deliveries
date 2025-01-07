@@ -117,7 +117,7 @@
                         <div id="scan-package" class = "section">
                             <div >
                                 <div>
-                                    <p id="scan-p1">Scan a package to assign to <span id="patient-name">name</span></p>
+                                    <p id="scan-p1">Scan a package to assign to <span id="patientt">name</span></p>
                                 </div>
                                 <div class="general-barcode">
                                     <div class="scan-package">
@@ -150,19 +150,7 @@
                                     <button id="barcode-bottom-btn1">Back</button>
                                     <button id="barcode-bottom-btn2">Assign Package</button>
                                 </div>
-                            </div>
-                            <div id = "modal-overlay" class="hidden">
-                                <div class="div1" >
-                                    <p id="upper-overlay">Assign Package <span id="package-code" class= "packagee-code">code</span> </p>
-                                </div>
-                                <div class="div1">
-                                    <p id="middle-overlay">Are you sure you want to assign package <span  id="package-code-confirmation"  class= "packagee-code">PKG123456</span> to <span id="patient-name">name</span>?</p>
-                                </div>
-                                <div id="btn-overlay">
-                                    <button id = "go-back-btn" >No,Go back</button>
-                                    <button id = "assign-package-btn" >Yes, Assign Package</button>
-                                </div>
-                            </div>
+                            </div>   
                         </div>
                         <div id="line">
                             <button id="next-button" >Next</button>
@@ -170,6 +158,18 @@
                     </div>    
                 </div>   
             </div>
+        </div>
+    </div>
+    <div id = "modal-overlay" class="hidden">
+        <div class="div1" >
+            <p id="upper-overlay">Assign Package <span id="package-code" class= "packagee-code">code</span> </p>
+        </div>
+        <div class="div1">
+            <p id="middle-overlay">Are you sure you want to assign package <span  id="package-code-confirmation"  class= "packagee-code">PKG123456</span> to <span id="patient-name">name</span>?</p>
+        </div>
+        <div id="btn-overlay">
+            <button id = "go-back-btn" >No,Go back</button>
+            <button id = "assign-package-btn" >Yes, Assign Package</button>
         </div>
     </div>
     <script src="javascript/set_drug_cycle.js"></script>

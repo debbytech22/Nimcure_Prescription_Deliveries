@@ -1,7 +1,9 @@
 
-if (patientData){
-    document.getElementById("patient-name").textContent = patientData["Patient's Name"];
+const PatientData = JSON.parse(localStorage.getItem("patientData"));
+if (PatientData) {
+    document.getElementById("patientt").textContent = PatientData["Patient's Name"] || "";
 }
+
 
 
 
@@ -56,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 scanResult.style.position = "relative";
                 scanResult.style.top = "150px";
                 scanResult.style.left = "300px";
+                assignPackageBtn.style.backgroundColor = "rgba(31, 90, 244, 1)";
                 initializeModalAndBlur();
             }, 1000); 
         }, 
@@ -77,9 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-
 function initializeModalAndBlur() {
     console.log("Modal initialization started");
 
@@ -95,20 +95,6 @@ function initializeModalAndBlur() {
 
         modalOverlay.classList.remove("hidden");
 
-        const packageCodeSpan = document.getElementById("package-code");
-        const packageCodeConfirmationSpan = document.getElementById("package-code-confirmation");
-
-        if (packageCodeSpan) {
-            packageCodeSpan.textContent = packageCodeText;
-        } else {
-            console.error("Package code span not found.");
-        }
-
-        if (packageCodeConfirmationSpan) {
-            packageCodeConfirmationSpan.textContent = packageCodeText;
-        } else {
-            console.error("Package code confirmation span not found.");
-        }
     });
 
     const goBackBtn = document.getElementById("go-back-btn");
@@ -120,6 +106,6 @@ function initializeModalAndBlur() {
     const assignPackageModalBtn = document.getElementById("assign-package-btn");
     assignPackageModalBtn.addEventListener("click", () => {
         console.log("Assigning package...");
-        window.location.href = "/assign-package"; 
+        window.location.href = "index55.html"; 
     });
 }

@@ -15,6 +15,8 @@
     const scan_package_radio = document.getElementById("scan-package-radio");
     const scan_package_btn = document.getElementById("scan-package-btn");
     const scan_package_div = document.getElementById("underline3")
+    const assignPackageBtn = document.getElementById("barcode-bottom-btn2");
+
 
     const sections = ["set-drug-cycle", "assign-rider", "scan-package"];
     let currentSectionIndex = 0;
@@ -44,7 +46,7 @@
             pDrugCycle.style.color = "";
             pDrugCycle.style.fontWeight = "";
             pDrugCycle.style.fontSize = "";
-
+            assignPackageBtn.style.backgroundColor ="rgba(31, 91, 244, 0.49)"
             sessionDrugCycleChecked = false;
         }
     }
@@ -76,6 +78,7 @@
             
         } else if (sections[index] === "scan-package") {
             nextButton.disabled = false; 
+            nextButton.style.display ="none"
             nextButton.style.backgroundColor = "rgba(31, 90, 244, 1)";
             scan_package_div.style.borderBottom = " 4px solid rgba(39, 109, 247, 1)";
             scan_package_radio.checked = true;

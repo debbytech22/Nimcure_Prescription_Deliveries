@@ -178,21 +178,18 @@
     pointer-events: none; 
 } 
 
-/* Modal overlay styles */
 #modal-overlay {
     position: relative;
-    /* top: 200px; */
     bottom: 200px;
     left: 700px;
     z-index: 1000;
-    backdrop-filter: blur(5px); /* Optional: Add extra blur for the overlay */
+    backdrop-filter: blur(5px); 
     width: 400px;
     height: 320px;
     border: 2px solid;
     background-color: white;
 }
 
-/* Hidden by default */
 #modal-overlay.hidden {
     display: none;
 }
@@ -247,27 +244,24 @@
     background-color: white;
 }
 
-/* #background-content{
-    position: relative; 
-    z-index: 1; 
-} */
+
 
 
 #background-content.blurred::before {
-    content: ""; /* Ensures pseudo-element is displayed */
-    position: fixed; /* Covers the entire viewport */
+    content: ""; 
+    position: fixed; 
     top: 0;
     left: 0;
-    width: 100vw; /* Viewport width */
-    height: 100vh; /* Viewport height */
-    background-color: rgba(0, 0, 0, 0.4); /* Transparent black overlay */
-    z-index: 2; /* Places above the background but below the modal */
-    pointer-events: none; /* Prevents blocking interactions with the modal */
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 2; 
+    pointer-events: none; 
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent scrolling */
+    overflow: hidden; 
     height: 100%;
 }
