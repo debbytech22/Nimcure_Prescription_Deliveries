@@ -1,0 +1,214 @@
+{
+    "openapi": "3.0.0",
+    "info":{
+        "title": "Nim Care APIs",
+        "description": "This APIs are used to serve  the patient and riders data in the mysql database to the front end interface .",
+        "version": "1.0.0"
+    },
+    "servers":[
+        {"url": "http://localhost:3000"}
+    ],
+
+    "paths": {
+        "/":{
+            "get":{
+                "summary":"Get the Landing Page ",
+                "responses":{
+                    "200":{
+                        "description": "A successful response",
+                        "content": {
+                            "text/html": {
+                                "schema":{
+                                    "type": "string",
+                                    "properties":{
+                                        "message" :{
+                                            "type": "html file",
+                                            "example":  "<!DOCTYPE html><html><head><title>Landing Page</title></head><body>Welcome to the login Page for Nim Care Delivery !</body></html>"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        },
+        "/login": {
+            "post":{
+                "summary":"Submit the User Details ",
+                "responses":{
+                    "200":{
+                        "description": "A successful response",
+                        "content": {
+                            "application/json": {
+                                "schema":{
+                                    "type": "object",
+                                    "properties":{
+                                        "message" :{
+                                            "type": "string",
+                                            "example":  "User details submitted"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400":{
+                        "description": "Email and password are required",
+                        "content": {
+                            "application/json": {
+                                "schema":{
+                                    "type": "object",
+                                    "properties":{
+                                        "error" :{
+                                            "type": "string",
+                                            "example":  "Email and password are required"
+                                             },
+                                        "code": {
+                                            "type": "integer",
+                                            "example": 400
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401":{
+                        "description": "Invalid email or password",
+                        "content": {
+                            "application/json": {
+                                "schema":{
+                                    "type": "object",
+                                    "properties":{
+                                        "error" :{
+                                            "type": "string",
+                                            "example":  "Invalid email or password"
+                                             },
+                                        "code": {
+                                            "type": "integer",
+                                            "example": 401
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500":{
+                        "description": "An error occurred while processing your request",
+                        "content": {
+                            "application/json": {
+                                "schema":{
+                                    "type": "object",
+                                    "properties":{
+                                        "error" :{
+                                            "type": "string",
+                                            "example":  "An error occurred while processing your request"
+                                             },
+                                        "code": {
+                                            "type": "integer",
+                                            "example": 500
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        },
+        "/patients":{
+            "get":{
+                "summary":" Get the Patient Info",
+                "responses":{
+                    "200":{
+                        "description": "Patient data fetched",
+                        "content": {
+                            "application/json": {
+                                "schema":{
+                                    "type": "object",
+                                    "properties":{
+                                        "message" :{
+                                            "type": "string",
+                                            "example":  "Patient data fetched"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500":{
+                        "description": "An error occurred while processing your request",
+                        "content": {
+                            "application/json": {
+                                "schema":{
+                                    "type": "object",
+                                    "properties":{
+                                        "error" :{
+                                            "type": "string",
+                                            "example":  "Failed to fetch patients data"
+                                             },
+                                        "code": {
+                                            "type": "integer",
+                                            "example": 500
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        },
+        "/patientupdate":{
+            "post":{
+                "summary":"Update the Patient Info",
+                "responses":{
+                    "200":{
+                        "description": "Patient Data Updated",
+                        "content": {
+                            "application/json": {
+                                "schema":{
+                                    "type": "object",
+                                    "properties":{
+                                        "message" :{
+                                            "type": "string",
+                                            "example":  "Patient data fetched"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500":{
+                        "description": "An error occurred while processing your request",
+                        "content": {
+                            "application/json": {
+                                "schema":{
+                                    "type": "object",
+                                    "properties":{
+                                        "error" :{
+                                            "type": "string",
+                                            "example":  "Failed to fetch patients data"
+                                             },
+                                        "code": {
+                                            "type": "integer",
+                                            "example": 500
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+
+}
